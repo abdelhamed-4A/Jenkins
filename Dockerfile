@@ -1,7 +1,7 @@
 FROM alpine:latest
 
-# Install Nginx
-RUN apk update && apk add --no-cache nginx
+# Install Nginx and Curl
+RUN apk update && apk add --no-cache nginx curl
 
 # Ensure the HTML directory exists
 RUN mkdir -p "/usr/share/nginx/html/"
@@ -13,5 +13,4 @@ RUN echo "Abdel-Hamed  --->  DevOps Engineer" > "/usr/share/nginx/html/index.htm
 EXPOSE 80
 
 # Run Nginx in the foreground
-# Without {daemon off}, the container will exit immediately after starting
 CMD ["nginx", "-g", "daemon off;"]
