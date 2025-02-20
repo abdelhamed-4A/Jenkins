@@ -12,7 +12,6 @@ This project demonstrates a CI/CD pipeline that uses Jenkins, Docker, and Kubern
 ```
 ├── Jenkinsfile             # CI/CD pipeline definition
 ├── Dockerfile              # Instructions to build the Docker image
-├── index.html              # Web application (sample page)
 ├── jenkins-deployment.yaml # Kubernetes deployment file
 ├── script.sh               # Bash script executed by Jenkins
 └── README.md               # Project documentation
