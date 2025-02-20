@@ -7,7 +7,7 @@ RUN apk update && apk add --no-cache nginx
 RUN mkdir -p "/usr/share/nginx/html/"
 
 # Add custom message to index.html
-RUN echo "Ahmed Abd Elhamid  --->  DevOps Engineer" > "/usr/share/nginx/html/index.html"
+RUN echo "Abdel-Hamed  --->  DevOps Engineer" > "/usr/share/nginx/html/index.html"
 
 # Expose port 80
 EXPOSE 80
